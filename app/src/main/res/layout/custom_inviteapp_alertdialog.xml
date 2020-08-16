@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+       >
+
+        <Button
+            android:id="@+id/btnUserApp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="AlertMeU User App"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnBusinessApp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="AlertMeU Business App"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

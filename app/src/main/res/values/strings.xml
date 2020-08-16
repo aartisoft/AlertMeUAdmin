@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Alert MeU Admin</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="login">Login</string>
+    <string name="register">Registration</string>
+    <string name="l_email">Enter your email address</string>
+    <string name="l_password">Enter Password</string>
+    <string name="r_g_male">He</string>
+    <string name="r_g_female">She</string>
+    <string name="r_first_name">* First Name</string>
+    <string name="r_last_name">* Last Name</string>
+    <string name="r_mobile_no">* Mobile Number</string>
+    <string name="r_email">Email Id</string>
+    <string name="r_password">* Password</string>
+
+    <string name="uploaddata">Upload Data</string>
+    <string name="paypal">Paypal Payment</string>
+    <string name="showdata">Show Data On Map</string>
+
+    <string name="generateqrcode">Advertisement</string>
+    <string name="scanqrcode">Scan QR Code</string>
+    <string name="paypal_button">Pay with PayPal</string>
+    <string name="title_activity_n">NActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">AlertMeU</string>
+    <string name="nav_header_subtitle">alertmeu@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home_page">AlertMeU</string>
+
+    <string name="loading">Loading...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Fetch Address-->
+    <string name="no_geocoder_available">No geocoder available</string>
+
+    <string name="fetch_address">Fetch address</string>
+
+    <string name="address_found">Address found</string>
+
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+
+    <!--Register form -->
+    <string name="regTitle">Register and get started</string>
+    <string name="regGuestUser">Sign in as a Guest user</string>
+    <string name="regMobileNo">Enter your Phone number here</string>
+    <string name="regNext">Next</string>
+    <string name="regDescOne">By signing up you accept our</string>
+    <string name="regDescTwo">Terms of Services and Privacy Policy</string>
+    <string name="regVryDesc">We just sent you SMS with one time password(OTP)</string>
+    <string name="regCode">Enter the code here</string>
+    <string name="regCrePass">Create a password</string>
+    <string name="regEnterPass">Enter password here.</string>
+    <string name="regReEnterPass">Re-nter password here..</string>
+    <string name="regReEnterPassDesc">Do Not share your password with anyone.</string>
+    <string name="regReWarning">This phone number already exists.</string>
+    <string name="regReWarning1">This phone number not valid.</string>
+    <string name="regEnterPassDec">The password must be minimum 6 characters long.\n You can use letters and alphabets and special characters !#$*</string>
+    <string name="logDec1">Have a changed your phone number?</string>
+    <string name="logSignInM">Sign in with Email</string>
+    <string name="logSignInMn">Sign in with phone number</string>
+    <string name="lognew">New to Alert MeU?</string>
+    <string name="logreg">Register</string>
+    <string name="logpass">Enter your password here</string>
+    <string name="logfpass">Forgot your password?</string>
+    <string name="helNpr">REENTER PASSWORD</string>
+    <string name="helNpr5">Enter your REENTER Password here </string>
+    <!--Seetings -->
+    <string name="setmyprec">My Shopping Preferences</string>
+    <string name="setmyplac">Allow App places</string>
+    <string name="setmyhelp">Help</string>
+    <string name="setshare">Invite a Friend</string>
+    <!--Help center -->
+    <string name="helpCen">Help Center</string>
+    <string name="helpcmn">Change my number</string>
+    <string name="helpfaq">Frequently Asked Questions</string>
+    <string name="helpcus">Contact us</string>
+    <string name="helptpp">Terms and Privacy Policy</string>
+    <string name="helplo">Log out</string>
+    <string name="helpCan">Cancel</string>
+    <string name="helpv">version</string>
+    <string name="helpb">Build</string>
+    <string name="helts">Terms of Service</string>
+    <string name="heltcmn">Change my phone number</string>
+    <string name="helDesc1">Use Change Number to move your account info and settings from your current phone number to a new phone number.
+</string>
+    <string name="helDesc2">To continue you need to enter your OLD and NEW phone numbers in next screen.</string>
+    <string name="helDesc3">OLD PHONE NUMBER</string>
+    <string name="helDesc6">NEW PHONE NUMBER</string>
+    <string name="helDesc4">Enter your OLD Phone number here</string>
+    <string name="helDesc5">Enter your NEW Phone number here </string>
+    <string name="contactdec">Please read frequently asked questions first. If your questions are still not answered describe the problem or issues, include screenshots, if available, and send it to us.
+        \n\nThank you using the App.
+        \n\nDescribe your problem here:</string>
+    <string name="contactsend">Send</string>
+    <string name="myloc">My current location</string>
+    <string name="helpLog">You will be logged out of Alert MeU Admin application. To access the application, please login again.</string>
+    <string name="myprep">App Preferred Places</string>
+    <string name="mycat">Add/Modify Category</string>
+
+    <string name="mycata">Add Money Notification/Referral </string>
+    <string name="regReMbc">Select your business category</string>
+    <string name="regReSbc">Select your sub category</string>
+    <string name="regReAS">Account Setup</string>
+    <string name="advertTilte">Advertisement Details</string>
+    <!--Edit user profiles -->
+    <string name="editUserTitile">User Details</string>
+    <string name="editUserUpdate">Update</string>
+    <string name="faqD"> Still did not find answers to your questions?</string>
+    <string name="homeTilte">Admin</string>
+    <string name="setmyaccount">My Account</string>
+    <string name="heltcmp">Change my password</string>
+    <string name="helOp4">Enter your OLD Password here</string>
+    <string name="helNp5">Enter your NEW Password here </string>
+    <string name="helOp">OLD PASSWORD</string>
+    <string name="helNp">NEW PASSWORD</string>
+    <string name="helpcmp">Change my password</string>
+</resources>

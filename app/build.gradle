@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "in.alertmeu.a4a"
+        minSdkVersion 14
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        useLibrary 'org.apache.http.legacy'
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+
+                variant.outputs.all {
+                    outputFileName = "AlertMeUAdmin_P_app-${defaultConfig.versionName}v.apk"
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'com.hbb20:ccp:2.2.3'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.alertmeu.a4a">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.NETWORK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- for Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+    <uses-permission android:name="android.permission.READ_APP_BADGE" />
+
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity android:name=".activity.AddMoneyActivity"></activity>
+        <activity android:name=".activity.AddModifyCategoryActivity" />
+        <activity android:name=".activity.AllAddMoneyRequestHistroyActivity" />
+        <activity android:name=".activity.LogoutActivity" />
+        <activity android:name=".activity.ChangeMyPasswordActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activity.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".activity.MyPlacesActivity" />
+        <activity android:name=".activity.HelpCenterActivity" />
+        <activity android:name=".activity.AdminProfileSettingActivity" />
+        <activity android:name=".activity.ReEnterChangePassctivity" />
+        <activity android:name=".activity.CreateChangePassActivity" />
+        <activity android:name=".activity.OTPForChangePasswordActivity" />
+        <activity android:name=".activity.PostLoginActivity" />
+        <activity android:name=".activity.OTPForRegisterActivity" />
+        <activity android:name=".activity.RegisterNGetStartActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.HomePageActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.SplashScreenActivity" />
+        <activity android:name=".activity.SplashActivity" />
+        <activity android:name=".activity.LSplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".FirebaseNotification.MyFirebaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FirebaseNotification.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".utils.FetchAddressIntentService"
+            android:exported="false" />
+    </application>
+
+</manifest>

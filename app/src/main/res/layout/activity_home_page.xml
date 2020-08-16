@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.HomePageActivity">
+
+    <!-- Header aligned to top -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/head1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/naviBtn"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight=".1"
+                android:src="@drawable/navi_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:gravity="center"
+                android:text="@string/homeTilte"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:background="@color/colorPrimary"></View>
+
+    </RelativeLayout>
+
+    <!-- Footer aligned to bottom -->
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+    </RelativeLayout>
+
+
+    <!-- Scrollable Item below header and above footer -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginRight="@dimen/spacing_medium"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+

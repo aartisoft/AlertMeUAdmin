@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+
+    android:descendantFocusability="beforeDescendants"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:id="@+id/clickAddMony"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linear_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C1FFE0"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="Notification Amount"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/nAmt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="00"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+               >
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="User Referral Amount"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/uaAmt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="00"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="Business Referral Amount"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/baAmt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="00"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="Initial Deposit Amount"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/iAmt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="00"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_faintgray"></View>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
